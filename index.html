@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2>Dashboard</h2>
+        <button id="addUserBtn" class="btn">Add User</button>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Users</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Users</h3>
+                <p>10</p>
+            </div>
+            <div class="card">
+                <h3>Sales</h3>
+                <p>$300</p>
+            </div>
+            <div class="card">
+                <h3>Orders</h3>
+                <p>15</p>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <h2>Users Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>User Name</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <tr><td>1</td><td>Marah</td></tr>
+                <tr><td>2</td><td>Mohammed</td></tr>
+                <tr><td>3</td><td>Maha</td></tr>
+                <tr><td>4</td><td>Mona</td></tr>
+                <tr><td>5</td><td>Adam</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Add New User</h3>
+            <input type="text" id="usernameInput" placeholder="Enter user name">
+            
+            <div class="modal-buttons">
+                <button id="saveUser" class="btn">Save</button>
+                <button id="closeModal" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
